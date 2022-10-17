@@ -1,0 +1,82 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
+
+.feature {
+    position: relative;
+    background-color: rgb(234, 236, 241);
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 140px 0px 100px;
+    border-radius: $border-radius;
+
+    @include mobile {
+        padding: 0;
+        margin: 0 12px;
+    }
+
+    & .img_one {
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    & .img_two {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    & .img_three {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    & .img_four {
+        position: absolute;
+        left: 31%;
+        bottom: 125px;
+    }
+
+    & .feature__area-row {
+        display: flex;
+        gap: 24px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        & .area__row-text {
+            flex-basis: 50%;
+            & h2 {
+                font-size: 50px;
+                font-weight: 500;
+                color: $black-color;
+                letter-spacing: -0.01em;
+                margin-bottom: 20px;
+                @include mobile {
+                    font-size: 43px;
+                    line-height: 1.1;
+                }
+            }
+
+            & p {
+                color: #494949;
+            }
+        }
+
+        & .row-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 15px;
+
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

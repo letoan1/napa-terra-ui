@@ -1,0 +1,53 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
+
+.button-type {
+    margin-right: 25px;
+
+    & .text {
+        color: $white-color;
+        width: 100%;
+    }
+
+    & .mobile {
+        @include mobile {
+            display: none;
+        }
+
+        & .try {
+            margin-bottom: 16px;
+        }
+    }
+
+    & .contained {
+        background-color: $orange-color;
+        padding: 20px 35px 18px 35px;
+        width: 100%;
+
+        &:hover {
+            background-color: $orange-color;
+            opacity: 0.5;
+        }
+    }
+
+    & .outline {
+        color: $white-color;
+        background-color: transparent;
+        padding: 12px 32px;
+        border: 1px solid $white-color;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $white-color;
+            color: $orange-color;
+        }
+
+        @include mobile {
+            padding: 5px 18px;
+        }
+    }
+
+    & .change-color {
+        color: $black-color;
+    }
+}

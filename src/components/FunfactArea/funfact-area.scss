@@ -1,0 +1,27 @@
+@import '../../scss/_variables.scss';
+
+.funfact__area {
+    padding: 120px 0px;
+
+    & .funfact__area-flex {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        & .area__flex-item {
+            width: 25%;
+            & h2 {
+                font-size: 80px;
+                color: $black-color;
+                margin-bottom: 5px;
+                font-weight: 500;
+            }
+
+            & p {
+                font-size: 18px;
+                color: #494949;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

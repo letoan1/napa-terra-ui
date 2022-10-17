@@ -1,0 +1,145 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
+
+.experience {
+    position: relative;
+    padding-bottom: 180px;
+    margin: 0 12px;
+
+    @include mobile {
+        padding-bottom: 0;
+    }
+
+    & .bell {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+
+    & .experience__area {
+        display: flex;
+        padding-top: 100px;
+
+        & .experience__area-row {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+
+            & .img__row {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                flex-basis: 60%;
+
+                & .img__row-shap {
+                    background-color: rgb(211, 195, 252);
+                    width: 515px;
+                    height: 515px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+
+                    @include mobile {
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+
+                & .dashboard {
+                    position: absolute;
+                    left: -80px;
+                    bottom: 0;
+                    animation: moving_right 5s infinite;
+
+                    @include mobile {
+                        width: 400px;
+                        left: -55px;
+                    }
+                }
+
+                & .mobile {
+                    position: absolute;
+                    right: -15px;
+                    bottom: 0;
+                    animation: moving_left 5s infinite;
+                    @include mobile {
+                        width: 180px;
+                    }
+                }
+
+                & .zigzag {
+                    position: absolute;
+                    bottom: -150px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+            }
+
+            & .text__row {
+                flex-basis: 40%;
+
+                & .text__row-content {
+                    & p {
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #414141;
+                        margin-bottom: 18px;
+                    }
+
+                    & a {
+                        font-size: 17px;
+                        line-height: 22px;
+                        color: #868686;
+                        position: relative;
+                        display: inline-block;
+                        font-style: italic;
+                        transition: color 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes moving_right {
+    0% {
+        transform: translateX(10px);
+    }
+    25% {
+        transform: translateX(15px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    75% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes moving_left {
+    0% {
+        transform: translateX(-10px);
+    }
+    25% {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}

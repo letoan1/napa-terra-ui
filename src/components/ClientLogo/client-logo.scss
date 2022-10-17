@@ -1,0 +1,106 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
+
+.client__logo {
+    padding: 140px 0px;
+    position: relative;
+    background-color: rgb(244, 244, 244);
+
+    @include mobile {
+        padding: 80px 0;
+    }
+
+    & .client__logo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 12px;
+
+        & h2 {
+            color: $black-color;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 70px;
+        }
+
+        & .star {
+            position: absolute;
+            left: 120px;
+            top: 152px;
+            animation: starMoving 10s infinite;
+
+            @include mobile {
+                left: 0;
+            }
+        }
+
+        & .clients__logo_info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include mobile {
+                justify-content: center;
+                gap: 10px 0;
+            }
+
+            & .item {
+                width: 20%;
+                position: relative;
+                overflow: hidden;
+
+                @include mobile {
+                    width: 50%;
+                }
+
+                & img {
+                    opacity: 1;
+                    transform: translateY(0%);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover img {
+                    opacity: 1;
+                    transform: translateY(-100%);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            & .item:hover img + img {
+                top: 0;
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, 0%);
+            }
+        }
+
+        & .clients__logo_info .item img + img {
+            top: 150%;
+            opacity: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+}
+
+@keyframes starMoving {
+    0% {
+        transform: translate3d(0px, 52.268px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(52.268deg) scaleX(1) scaleY(1)
+            scaleZ(1);
+    }
+    50% {
+        transform: translate3d(0px, 62.268px, 0px) rotateX(10deg) rotateY(10deg) rotateZ(62.268deg) scaleX(1) scaleY(1)
+            scaleZ(1);
+    }
+    75% {
+        transform: translate3d(0px, 72.268px, 0px) rotateX(20deg) rotateY(20deg) rotateZ(72.268deg) scaleX(1) scaleY(1)
+            scaleZ(1);
+    }
+    100% {
+        transform: translate3d(0px, 52.268px, 0px) rotateX(13deg) rotateY(10deg) rotateZ(82.268deg) scaleX(1) scaleY(1)
+            scaleZ(1);
+    }
+}

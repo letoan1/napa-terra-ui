@@ -1,0 +1,47 @@
+@import '../../scss/_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.service-item {
+    background: $white-color;
+    box-shadow: 1px 1px 10px rgb(98 124 137 / 10%);
+    border-radius: 6px;
+    position: relative;
+    padding: 32px;
+    margin-bottom: 30px;
+
+    & > img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    & .icon {
+        font-size: 40px;
+        color: #fda0a7;
+        margin-bottom: 15px;
+    }
+
+    & h4 {
+        font-size: 24px;
+        font-weight: 600;
+        color: $black-color;
+    }
+
+    & > p {
+        color: #494949;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    & > a {
+        font-size: 16px;
+        line-height: 30px;
+        color: $black-color;
+        font-style: italic;
+    }
+}

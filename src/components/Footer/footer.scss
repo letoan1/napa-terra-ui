@@ -1,0 +1,93 @@
+@import '../../scss/_variables.scss';
+
+.footer {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    background-color: $black-color;
+
+    & .main__footer-row {
+        display: flex;
+        justify-content: space-between;
+
+        & .content h5 {
+            color: $white-color;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        & .content span {
+            color: $white-color;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 22px;
+            display: inline-block;
+            margin-top: 45px;
+        }
+
+        & .content ul {
+            padding-left: 0;
+            list-style: none;
+
+            & li,
+            li > a {
+                margin: 10px 0;
+                color: #a6a4a4;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 27px;
+                letter-spacing: 0.01em;
+
+                & > a {
+                    text-decoration: none;
+                    &:hover {
+                        color: $orange-color;
+                    }
+                }
+                & .number {
+                    color: #ff824c;
+                }
+            }
+        }
+    }
+
+    & .area__footer-bottom {
+        padding-top: 150px;
+
+        & .footer__bottom-row {
+            display: flex;
+
+            & .row-reserved {
+                width: 50%;
+
+                & p {
+                    color: #9f9da5;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 36px;
+                    margin-bottom: 0;
+                }
+            }
+
+            & .row-socials {
+                width: 50%;
+                text-align: right;
+
+                & .social-icons a {
+                    color: #a9a8ad;
+                    font-size: 20px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        color: $orange-color;
+                    }
+                }
+            }
+        }
+    }
+}

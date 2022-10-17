@@ -1,0 +1,9 @@
+@import '../../scss/_breakpoin.scss';
+
+.rating-item:not(:nth-child(4)) {
+    border-right: 1px solid #535353;
+
+    @include mobile {
+        border-right: none;
+    }
+}
