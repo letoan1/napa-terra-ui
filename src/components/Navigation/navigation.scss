@@ -376,6 +376,9 @@
 
     & .nav__top-button {
         display: flex;
+        @include mobile {
+            display: block;
+        }
     }
 }
 
@@ -391,4 +394,15 @@
 .nav__top.active ul li a,
 .nav__top.active ul li .nav__top-center-icon {
     color: $black-color;
+}
+
+@include mobile {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+        left: 0;
+        margin: 20px 0px;
+    }
+
+    .icon-scroll {
+        background-color: $black-color;
+    }
 }
