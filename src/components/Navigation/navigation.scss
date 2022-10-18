@@ -37,6 +37,10 @@
                 display: none;
             }
 
+            @include tablet {
+                display: none;
+            }
+
             &:hover > a,
             &:hover > .nav__top-center-icon {
                 color: #ff824c;
@@ -304,6 +308,35 @@
                     background-color: transparent;
                     transform: translateY(-100%);
                 }
+            }
+        }
+    }
+
+    @include tablet {
+        & .icon__close {
+            position: relative;
+            display: block;
+            margin-left: 1100%;
+
+            & > div {
+                width: 25px;
+                height: 2px;
+                background-color: $white-color;
+                margin: 5px;
+                transition: all 0.3s ease-in;
+                cursor: pointer;
+            }
+
+            &.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 5px);
+            }
+
+            &.toggle .line2 {
+                opacity: 0;
+            }
+
+            &.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -5px);
             }
         }
     }

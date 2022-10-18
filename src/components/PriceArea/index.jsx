@@ -12,7 +12,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import './price-area.scss';
-import bell_price from '../../assets/img/bell-price.png';
+import bell_price from '~/assets/img/bell-price.png';
 
 function createData(name, check, check2, check3) {
     return { name, check, check2, check3 };
@@ -109,6 +109,7 @@ export default function PriceArea() {
                                 <TableCell
                                     align="center"
                                     sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px' }}
+                                    className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>
                                     <p>I just worked hard</p>
@@ -116,6 +117,7 @@ export default function PriceArea() {
                                 <TableCell
                                     align="center"
                                     sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px' }}
+                                    className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>
                                     <p>I just worked hard</p>

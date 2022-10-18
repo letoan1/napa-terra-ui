@@ -3,7 +3,7 @@ import React from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import './update-area.scss';
-import zigzag_two from '../../assets/img/zigzag_two.png';
+import zigzag_two from '~/assets/img/zigzag_two.png';
 
 export default function UpdateArea() {
     return (

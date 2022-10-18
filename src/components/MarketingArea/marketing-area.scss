@@ -22,6 +22,11 @@
             color: $white-color;
             font-family: 'Lato', sans-serif;
 
+            @include tablet {
+                font-size: 48px;
+                line-height: 72px;
+            }
+
             @include mobile {
                 font-size: 51px;
                 line-height: 1.2;
@@ -47,6 +52,10 @@
             font-size: 18px;
             text-align: center;
             color: $white-color;
+
+            @include tablet {
+                font-size: 20px;
+            }
         }
 
         & .button-marketing {
@@ -65,6 +74,11 @@
         & .marketing__area-img {
             position: relative;
             margin-top: 80px;
+
+            @include tablet {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
 
             @include mobile {
                 padding-left: 0px;
@@ -92,6 +106,25 @@
                 position: absolute;
                 top: -172px;
                 right: -125px;
+            }
+
+            @include tablet {
+                & ul li:nth-child(1) img {
+                    width: 100%;
+                }
+
+                & ul li:nth-child(2) {
+                    left: -15px;
+                    top: -42px;
+
+                    & img {
+                        width: 200px;
+                    }
+                }
+
+                & ul li:nth-child(3) {
+                    right: -100px;
+                }
             }
 
             @include mobile {

@@ -1,13 +1,27 @@
 @import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
 
 .footer {
     padding-top: 120px;
     padding-bottom: 20px;
     background-color: $black-color;
 
+    @include tablet {
+        padding: 120px 24px 20px;
+    }
+
+    @include mobile {
+        padding: 70px 0 0;
+    }
+
     & .main__footer-row {
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 40px;
+        }
 
         & .content h5 {
             color: $white-color;
@@ -16,6 +30,10 @@
             line-height: 24px;
             margin-bottom: 30px;
             font-weight: 400;
+
+            @include tablet {
+                margin-bottom: 0;
+            }
         }
 
         & .content span {
@@ -56,11 +74,30 @@
     & .area__footer-bottom {
         padding-top: 150px;
 
+        @include tablet {
+            padding-top: 80px;
+        }
+
+        @include mobile {
+            padding-top: 30px;
+        }
+
         & .footer__bottom-row {
             display: flex;
 
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+            }
+
             & .row-reserved {
                 width: 50%;
+
+                @include mobile {
+                    width: 100%;
+                    text-align: center;
+                }
 
                 & p {
                     color: #9f9da5;
@@ -74,6 +111,12 @@
             & .row-socials {
                 width: 50%;
                 text-align: right;
+
+                @include mobile {
+                    width: 100%;
+
+                    text-align: center;
+                }
 
                 & .social-icons a {
                     color: #a9a8ad;

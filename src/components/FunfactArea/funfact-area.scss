@@ -1,15 +1,38 @@
 @import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
+
+.funfact {
+    @include mobile {
+        padding: 80px 0;
+    }
+}
 
 .funfact__area {
     padding: 120px 0px;
+
+    @include mobile {
+        padding: 80px 0;
+    }
 
     & .funfact__area-flex {
         display: flex;
         justify-content: center;
         text-align: center;
 
+        @include tablet {
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+
         & .area__flex-item {
             width: 25%;
+
+            @include mobile {
+                width: 100%;
+            }
             & h2 {
                 font-size: 80px;
                 color: $black-color;

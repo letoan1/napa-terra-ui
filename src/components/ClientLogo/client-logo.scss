@@ -30,6 +30,10 @@
             top: 152px;
             animation: starMoving 10s infinite;
 
+            @include tablet {
+                left: 0;
+            }
+
             @include mobile {
                 left: 0;
             }
@@ -40,6 +44,11 @@
             justify-content: space-between;
             flex-wrap: wrap;
 
+            @include tablet {
+                justify-content: center;
+                gap: 10px 0;
+            }
+
             @include mobile {
                 justify-content: center;
                 gap: 10px 0;
@@ -49,6 +58,10 @@
                 width: 20%;
                 position: relative;
                 overflow: hidden;
+
+                @include tablet {
+                    width: 25%;
+                }
 
                 @include mobile {
                     width: 50%;

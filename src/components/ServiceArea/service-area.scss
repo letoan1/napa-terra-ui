@@ -30,6 +30,10 @@
             font-weight: 500;
             letter-spacing: -0.01em;
             margin-bottom: 20px;
+
+            @include tablet {
+                font-size: 58px;
+            }
         }
         & .typo {
             &::before {
@@ -50,16 +54,6 @@
             text-align: center;
             color: $black-color;
             margin-bottom: 75px;
-        }
-
-        & .service__area-row {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0 24px;
-
-            @include mobile {
-                grid-template-columns: 1fr;
-            }
         }
     }
 }

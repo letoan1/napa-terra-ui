@@ -4,10 +4,10 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 import './marketing-area.scss';
-import BasicButtons from '../Button/Button';
-import dashboard from '../../assets/img/dashbord_img.png';
-import card from '../../assets/img/card.png';
-import card2 from '../../assets/img/card-2.png';
+import BasicButtons from '~/components/Button';
+import dashboard from '~/assets/img/dashbord_img.png';
+import card from '~/assets/img/card.png';
+import card2 from '~/assets/img/card-2.png';
 
 export default function MarketingArea() {
     return (
@@ -19,7 +19,7 @@ export default function MarketingArea() {
                 <p>You said I'd feel better if I just worked hard without lifting my head up</p>
 
                 <div className="button-marketing">
-                    <BasicButtons variant="contained " icon={<ArrowDownwardIcon />} titleButton="Try fo free" />
+                    <BasicButtons variant="contained " icon={<ArrowDownwardIcon />} titleButton="Try for free" />
                     <BasicButtons variant="text" icon={<PlayArrowIcon />} titleButton="Watch video" />
                 </div>
 

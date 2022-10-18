@@ -1,4 +1,5 @@
 @import '../../scss/_variables.scss';
+@import '../../scss/_breakpoin.scss';
 
 .update {
     position: relative;
@@ -37,6 +38,18 @@
 
     & .update__area {
         text-align: center;
+
+        @include mobile {
+            h2 {
+                font-size: 46px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                color: #494949;
+            }
+        }
 
         & .theme-btn {
             background: $orange-color;
