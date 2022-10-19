@@ -1,10 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
-import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,85 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 import BasicButtons from '../Button';
 import './navigation.scss';
-
-const navBar = [
-    {
-        title: 'Home',
-        class: 'home__sub',
-        iconLow: <KeyboardArrowDownIcon />,
-        children: [
-            'Marketing Software',
-            'Help Desk',
-            'Finance and Analytics Software',
-            'Payment Gateway (LIGHT)',
-            'Hosting (LIGHT)',
-            'Digital Marketing (LIGHT)',
-            'Saas (LIGHT)',
-            'Cloud Hosting',
-            'Payment Gateway (DARK)',
-            'Hosting (DARK)',
-            'Digital Marketing (DARK)',
-        ],
-    },
-    {
-        title: 'Pages',
-        class: 'pages__sub',
-        iconLow: <KeyboardArrowDownIcon />,
-        childrenList: [
-            {
-                name: 'row__essential',
-                title: 'Essential Pages',
-                sub: ['About Us', ' About Business', 'Team', ' Team Details'],
-            },
-            {
-                name: 'row__features',
-                title: 'Features Pages',
-                sub: ['Service', 'Service Details'],
-            },
-            {
-                name: 'row__other',
-                title: 'Other Pages',
-                sub: ['FAQ', '404'],
-            },
-        ],
-    },
-    {
-        title: 'Portfolio',
-        class: 'portfolio__sub',
-        iconLow: <KeyboardArrowDownIcon />,
-        childrenList: [
-            {
-                item: 'Portfolio Two Column',
-                icon: ErrorOutlineOutlinedIcon,
-                color: 'warning',
-            },
-            {
-                item: 'Portfolio Three Column',
-                icon: AccountCircleOutlinedIcon,
-                color: 'primary',
-            },
-            {
-                item: 'Portfolio Masonry',
-                icon: LayersOutlinedIcon,
-                color: 'warning',
-            },
-            {
-                item: 'Portfolio Details',
-                icon: VolumeUpOutlinedIcon,
-                color: 'info',
-            },
-        ],
-    },
-    {
-        title: 'Blog',
-        class: 'blog__sub',
-        iconLow: <KeyboardArrowDownIcon />,
-        children: ['Blog List', 'Blog Details'],
-    },
-    {
-        title: 'Contact',
-    },
-];
+import { navBar } from '~/data';
 
 export default function Navigation() {
     const [nav, setNav] = React.useState(false);
