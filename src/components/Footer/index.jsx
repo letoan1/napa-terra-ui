@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
 import './footer.scss';
+
 import { listLi } from '~/data';
 
 export default function Footer() {
@@ -17,7 +18,7 @@ export default function Footer() {
                         <div className="main__footer-row">
                             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                                 {listLi.map((text, index) => (
-                                    <Grid item xs={12} sm={6} md={3} key={index}>
+                                    <Grid item xs={12} sm={6} md={3} key={index} className="footer-list">
                                         <div className="footer__row-item">
                                             <div className="site-info">
                                                 {text?.img && (
@@ -25,13 +26,13 @@ export default function Footer() {
                                                 )}
                                                 <div className="content">
                                                     <h5>{text.title}</h5>
-                                                    {text.list.map((sub, index) => (
-                                                        <ul>
+                                                    <ul>
+                                                        {text.list.map((sub, index) => (
                                                             <li key={index}>
                                                                 <a href="#">{sub}</a>
                                                             </li>
-                                                        </ul>
-                                                    ))}
+                                                        ))}
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>

@@ -6,6 +6,19 @@
     padding-top: 120px;
     z-index: 1;
 
+    & .sm-text {
+        & h5 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #212121;
+            margin-bottom: 4px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+    }
+
     @include tablet {
         margin: 0 24px;
 
@@ -145,4 +158,8 @@
     & .close {
         color: #e42e1b;
     }
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    font-size: 30px;
 }

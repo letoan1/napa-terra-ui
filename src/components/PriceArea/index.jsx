@@ -100,11 +100,19 @@ export default function PriceArea() {
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
                             <TableRow sx={{ backgroundColor: '#f8eee1' }}>
-                                <TableCell sx={{ fontSize: '30px', paddingLeft: '35px' }}>Overview</TableCell>
+                                <TableCell
+                                    sx={{
+                                        fontSize: '30px',
+                                        paddingLeft: '35px',
+                                        color: '#2c264a',
+                                    }}
+                                >
+                                    Overview
+                                </TableCell>
                                 <TableCell
                                     align="center"
                                     className="column-black"
-                                    sx={{ fontSize: '30px', width: '293.5px' }}
+                                    sx={{ fontSize: '30px', width: '293.5px', padding: '30px 20px ' }}
                                 >
                                     <div className="center-img">
                                         <img src={bell_price} alt="" /> TerraMart
@@ -112,7 +120,13 @@ export default function PriceArea() {
                                 </TableCell>
                                 <TableCell
                                     align="center"
-                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px', width: '293.5px' }}
+                                    sx={{
+                                        fontSize: '18px',
+                                        fontWeight: 400,
+                                        marginBottom: '4px',
+                                        width: '293.5px',
+                                        padding: '30px 20px',
+                                    }}
                                     className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>
@@ -120,7 +134,13 @@ export default function PriceArea() {
                                 </TableCell>
                                 <TableCell
                                     align="center"
-                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px', width: '293.5px' }}
+                                    sx={{
+                                        fontSize: '18px',
+                                        fontWeight: 400,
+                                        marginBottom: '4px',
+                                        width: '293.5px',
+                                        padding: '30px 20px',
+                                    }}
                                     className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>
@@ -130,21 +150,34 @@ export default function PriceArea() {
                         </TableHead>
                         <TableBody>
                             {rows.map((row) => (
-                                <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                <TableRow
+                                    key={row.name}
+                                    sx={{
+                                        '&:last-child td, &:last-child th': { border: 0 },
+                                        padding: '30px 20px',
+                                        borderBottom: '1px solid #3f3f3f',
+                                    }}
+                                >
                                     <TableCell
                                         component="th"
                                         scope="row"
-                                        sx={{ fontSize: '18px', paddingLeft: '35px' }}
+                                        sx={{ fontSize: '18px', padding: '25px 30px' }}
                                     >
                                         {row.name}
                                     </TableCell>
                                     <TableCell align="right" className="column-black" sx={{ fontSize: '18px' }}>
                                         {row.check}
                                     </TableCell>
-                                    <TableCell align="center" sx={{ fontSize: '18px' }}>
+                                    <TableCell
+                                        align="center"
+                                        sx={{ fontSize: '18px', borderBottom: '1px solid #3f3f3f' }}
+                                    >
                                         {row.check2}
                                     </TableCell>
-                                    <TableCell align="center" sx={{ fontSize: '18px' }}>
+                                    <TableCell
+                                        align="center"
+                                        sx={{ fontSize: '18px', borderBottom: '1px solid #3f3f3f' }}
+                                    >
                                         {row.check3}
                                     </TableCell>
                                 </TableRow>

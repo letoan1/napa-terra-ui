@@ -7,7 +7,6 @@ import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
 
 import footer__img from '~/assets/img/logo_4.png';
 
-
 export const navBar = [
     {
         title: 'Home',
