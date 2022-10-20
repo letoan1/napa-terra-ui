@@ -67,6 +67,15 @@
         display: flex;
         padding-top: 100px;
 
+        & .border-table {
+            border-bottom: 1px solid #3f3f3f;
+
+            &:last-child td,
+            &:last-child th {
+                border-bottom: 1px solid #fff;
+            }
+        }
+
         @include tablet {
             padding-top: 75px;
         }

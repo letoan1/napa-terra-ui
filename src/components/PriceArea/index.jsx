@@ -106,12 +106,13 @@ export default function PriceArea() {
                                         paddingLeft: '35px',
                                         color: '#2c264a',
                                     }}
+                                    className="border-table"
                                 >
                                     Overview
                                 </TableCell>
                                 <TableCell
                                     align="center"
-                                    className="column-black"
+                                    className="column-black border-table"
                                     sx={{ fontSize: '30px', width: '293.5px', padding: '30px 20px ' }}
                                 >
                                     <div className="center-img">
@@ -127,7 +128,7 @@ export default function PriceArea() {
                                         width: '293.5px',
                                         padding: '30px 20px',
                                     }}
-                                    className="sm-text"
+                                    className="sm-text border-table"
                                 >
                                     <h5>Other Agency #1</h5>
                                     <p>I just worked hard</p>
@@ -141,43 +142,45 @@ export default function PriceArea() {
                                         width: '293.5px',
                                         padding: '30px 20px',
                                     }}
-                                    className="sm-text"
+                                    className="sm-text     border-table"
                                 >
                                     <h5>Other Agency #1</h5>
                                     <p>I just worked hard</p>
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody>
+                        <TableBody className="row-table">
                             {rows.map((row) => (
                                 <TableRow
                                     key={row.name}
                                     sx={{
                                         '&:last-child td, &:last-child th': { border: 0 },
                                         padding: '30px 20px',
-                                        borderBottom: '1px solid #3f3f3f',
                                     }}
+                                    className="border-table"
                                 >
                                     <TableCell
                                         component="th"
                                         scope="row"
-                                        sx={{ fontSize: '18px', padding: '25px 30px' }}
+                                        sx={{
+                                            fontSize: '18px',
+                                            padding: '25px 30px',
+                                            borderBottom: '1px solid #3f3f3f',
+                                        }}
                                     >
                                         {row.name}
                                     </TableCell>
-                                    <TableCell align="right" className="column-black" sx={{ fontSize: '18px' }}>
+                                    <TableCell
+                                        align="right"
+                                        className="column-black border-table "
+                                        sx={{ fontSize: '18px' }}
+                                    >
                                         {row.check}
                                     </TableCell>
-                                    <TableCell
-                                        align="center"
-                                        sx={{ fontSize: '18px', borderBottom: '1px solid #3f3f3f' }}
-                                    >
+                                    <TableCell align="center" sx={{ fontSize: '18px' }} className="border-table ">
                                         {row.check2}
                                     </TableCell>
-                                    <TableCell
-                                        align="center"
-                                        sx={{ fontSize: '18px', borderBottom: '1px solid #3f3f3f' }}
-                                    >
+                                    <TableCell align="center" sx={{ fontSize: '18px' }} className="border-table ">
                                         {row.check3}
                                     </TableCell>
                                 </TableRow>
