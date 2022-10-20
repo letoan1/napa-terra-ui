@@ -70,7 +70,7 @@ const rows = [
     createData('Pricing', '$100.00', '$200.00', '$300.00'),
     createData(
         '',
-        <h5 className="started" style={{ cursor: 'pointer' }}>
+        <h5 className="started" style={{ cursor: 'pointer', fontSize: '18px', fontWeight: 100 }}>
             Get Started{' '}
             <span className="move-right">
                 {' '}
@@ -142,7 +142,7 @@ export default function PriceArea() {
                                         width: '293.5px',
                                         padding: '30px 20px',
                                     }}
-                                    className="sm-text     border-table"
+                                    className="sm-text border-table"
                                 >
                                     <h5>Other Agency #1</h5>
                                     <p>I just worked hard</p>
@@ -173,14 +173,14 @@ export default function PriceArea() {
                                     <TableCell
                                         align="right"
                                         className="column-black border-table "
-                                        sx={{ fontSize: '18px' }}
+                                        sx={{ fontSize: '25px' }}
                                     >
                                         {row.check}
                                     </TableCell>
-                                    <TableCell align="center" sx={{ fontSize: '18px' }} className="border-table ">
+                                    <TableCell align="center" sx={{ fontSize: '25px' }} className="border-table ">
                                         {row.check2}
                                     </TableCell>
-                                    <TableCell align="center" sx={{ fontSize: '18px' }} className="border-table ">
+                                    <TableCell align="center" sx={{ fontSize: '25px' }} className="border-table ">
                                         {row.check3}
                                     </TableCell>
                                 </TableRow>

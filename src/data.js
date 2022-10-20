@@ -91,17 +91,21 @@ export const listLi = [
         title: 'Call us',
         img: footer__img,
         list: ['925-465-3762', '2627 Park Street, San Francisco, CA', 'Support@droitlab.com'],
+        width: 4,
     },
     {
         title: 'About Us',
         list: ['About Agency', 'About Business', 'Our Mission', 'Our History'],
+        width: 3,
     },
     {
         title: 'Workflow',
         list: ['Contact Us', 'Classic Fullwidth', 'Classic Boxed', 'Creative Boxed'],
+        width: 3,
     },
     {
         title: 'Help & Support',
         list: ['Support', 'FAQ', 'Privacy', 'Term & conditions', 'Reporting'],
+        width: 2,
     },
 ];

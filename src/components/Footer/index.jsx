@@ -16,9 +16,14 @@ export default function Footer() {
                 <div className="area__main-footer">
                     <Box>
                         <div className="main__footer-row">
-                            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                            <Grid
+                                container
+                                rowSpacing={1}
+                                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+                                sx={{ justifyContent: 'center' }}
+                            >
                                 {listLi.map((text, index) => (
-                                    <Grid item xs={12} sm={6} md={3} key={index} className="footer-list">
+                                    <Grid item xs={12} sm={6} md={text.width} key={index} className="footer-list">
                                         <div className="footer__row-item">
                                             <div className="site-info">
                                                 {text?.img && (
