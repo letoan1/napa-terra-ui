@@ -30,7 +30,7 @@
         & li {
             display: flex;
             gap: 5px;
-            align-items: flex-start;
+            align-items: center;
             list-style: none;
 
             @include mobile {
@@ -101,6 +101,7 @@
 
         & .home__sub {
             visibility: hidden;
+
             & ul {
                 position: absolute;
                 display: flex;
@@ -113,6 +114,7 @@
                 padding: 30px;
                 border-radius: $border-radius;
                 transform: translateX(-20px);
+                z-index: 1;
 
                 & li:first-child a {
                     color: $orange-color;
@@ -137,7 +139,8 @@
                     background: $white-color;
                     transform: rotate(45deg);
                     left: 20px;
-                    top: -5px;
+                    top: -10px;
+                    z-index: -1;
                 }
             }
 
@@ -227,6 +230,7 @@
                 border-radius: $border-radius;
                 transform: translateX(-20px);
                 opacity: 1;
+                z-index: 1;
 
                 & .portfolio__sub-item > a {
                     display: flex;
@@ -247,6 +251,7 @@
                     transform: rotate(45deg);
                     left: 40px;
                     top: -5px;
+                    z-index: -1;
                 }
 
                 &::before {
@@ -278,6 +283,7 @@
                 border-radius: $border-radius;
                 transform: translateX(-20px);
                 opacity: 1;
+                z-index: 1;
 
                 & li a {
                     color: $black-color;
@@ -296,6 +302,7 @@
                     transform: rotate(45deg);
                     left: 40px;
                     top: -5px;
+                    z-index: -1;
                 }
 
                 &::before {
@@ -345,7 +352,7 @@
         & .icon__close {
             position: relative;
             display: block;
-            margin-left: 450%;
+            margin-left: 430%;
 
             & > div {
                 width: 25px;

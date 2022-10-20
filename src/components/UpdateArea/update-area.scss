@@ -39,6 +39,21 @@
     & .update__area {
         text-align: center;
 
+        & h2 {
+            font-size: 70px;
+            position: relative;
+            &::before {
+                content: '';
+                background: url(../../assets/img/line.png) no-repeat center right;
+                position: absolute;
+                right: 18%;
+                top: -20px;
+                z-index: 0;
+                width: 45px;
+                height: 50px;
+            }
+        }
+
         @include mobile {
             h2 {
                 font-size: 46px;

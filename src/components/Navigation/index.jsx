@@ -28,6 +28,10 @@ export default function Navigation() {
         setAnchorElNav(null);
     };
 
+    const handleClickMenu = () => {
+        menuRef.current.classList.toggle('toggle');
+    };
+
     React.useEffect(() => {
         const changeBackground = () => {
             if (window.scrollY >= 80) {
@@ -120,7 +124,7 @@ export default function Navigation() {
                                 ))}
                             </ul>
                         )}
-                        <IconButton
+                        {/* <IconButton
                             size="large"
                             aria-label="account of current user"
                             aria-controls="menu-appbar"
@@ -159,7 +163,13 @@ export default function Navigation() {
                                     <Typography textAlign="center">{page.title}</Typography>
                                 </MenuItem>
                             ))}
-                        </Menu>
+                        </Menu> */}
+
+                        <div class="icon__close" ref={menuRef} onClick={handleClickMenu}>
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
 
                     <span className="nav__top-button">

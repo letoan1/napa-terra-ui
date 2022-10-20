@@ -188,6 +188,10 @@
         align-items: center;
         position: relative;
 
+        & .ratting__content {
+            text-align: left;
+        }
+
         @include tablet {
             margin: 0 24px;
             margin-top: 150px;
@@ -244,14 +248,20 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    width: 8%;
+    width: 10%;
 
     @include mobile {
-        width: 15%;
+        width: 20%;
     }
 }
 
-.swiper-pagination-bullet-active {
+span.swiper-pagination-bullet {
+    background: #555555;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: $orange-color;
 }
 
