@@ -79,7 +79,8 @@
         }
 
         & .testimonial__swiper-preview {
-            margin-bottom: 35px;
+            margin-bottom: 60px;
+            max-width: 470px;
 
             & > p {
                 font-size: 24px;
@@ -227,8 +228,11 @@
             row-gap: 15px;
             margin-right: -50px;
             flex: 1;
-            margin-left: 61px;
             text-align: center;
+
+            & .ratting-item img {
+                margin-bottom: 10px;
+            }
 
             @include tablet {
                 grid-template-columns: repeat(4, 1fr);
@@ -248,7 +252,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    width: 10%;
+    width: 15%;
 
     @include mobile {
         width: 20%;
@@ -258,7 +262,7 @@
 span.swiper-pagination-bullet {
     background: #555555;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {

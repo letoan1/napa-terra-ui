@@ -52,3 +52,14 @@
         color: $black-color;
     }
 }
+
+.button-type:not(:nth-child(1)) {
+    & .active {
+        border: 1px solid $black-color;
+        padding: 12px 32px;
+
+        @include mobile {
+            padding: 5px 18px;
+        }
+    }
+}

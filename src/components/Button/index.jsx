@@ -7,7 +7,7 @@ export default function BasicButtons(props) {
     const { variant, titleButton, nav, icon } = props;
     return (
         <Stack className="button-type " spacing={2} direction="row">
-            <Button className={nav ? 'change-color' : variant} variant={variant}>
+            <Button className={nav ? 'change-color active' : variant} variant={variant}>
                 {icon} {titleButton}
             </Button>
         </Stack>

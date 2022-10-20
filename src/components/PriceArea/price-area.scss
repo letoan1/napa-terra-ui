@@ -34,7 +34,7 @@
         text-align: center;
 
         & h2 {
-            font-size: 38px;
+            font-size: 60px;
 
             @include tablet {
                 font-size: 58px;
@@ -43,6 +43,10 @@
             @include mobile {
                 font-size: 38px;
             }
+        }
+
+        & p {
+            color: #494949;
         }
     }
 
@@ -86,6 +90,13 @@
         gap: 10px;
         justify-content: center;
         color: $white-color;
+
+        & span {
+            transition: 0.3s ease;
+        }
+        &:hover span {
+            transform: translateX(10px);
+        }
     }
 
     & .theme_btn_text {

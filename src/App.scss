@@ -11,9 +11,6 @@
     & .container {
         max-width: 1200px;
         margin: 0 auto;
-        @include mobile {
-            padding: 0 12px;
-        }
     }
 
     & .title {

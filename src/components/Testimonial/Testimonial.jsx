@@ -67,7 +67,7 @@ export default function Testimonial() {
             <div className="container testimonial__area">
                 <Box sx={{ margin: '0 24px' }}>
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={7}>
                             <div className="testimonial__area-text">
                                 <h2>
                                     Happy customer <br /> <span>testimonials</span>
@@ -81,8 +81,7 @@ export default function Testimonial() {
                                         modules={[Pagination]}
                                         className="mySwiper"
                                         style={{
-                                            maxWidth: 600,
-                                            marginBottom: 20,
+                                            marginBottom: 60,
                                             fontSize: 24,
                                         }}
                                     >
@@ -100,7 +99,7 @@ export default function Testimonial() {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={5}>
                             <div className="testimonial__area-image">
                                 <div className="testimonial__area-shape">
                                     <img src={qoute} alt="Qoute" className="qoute" />
@@ -123,10 +122,10 @@ export default function Testimonial() {
                 </Grid>
                 <Grid item xs={12} md={6} sx={{ flexGrow: '1' }}>
                     <div className="ratting__info">
-                        <RatingItem img={capterra} value={5} ratingNumber="4.9/5" />
-                        <RatingItem img={trustpilot} value={5} ratingNumber="5/5" />
-                        <RatingItem img={getapp} value={5} ratingNumber="4.9/5" />
-                        <RatingItem img={clutch} value={5} ratingNumber="5/5" />
+                        <RatingItem img={capterra} value={5} ratingNumber="4.9/5" sx={{ fontSize: '1.15rem' }} />
+                        <RatingItem img={trustpilot} value={5} ratingNumber="5/5" sx={{ fontSize: '1.15rem' }} />
+                        <RatingItem img={getapp} value={5} ratingNumber="4.9/5" sx={{ fontSize: '1.15rem' }} />
+                        <RatingItem img={clutch} value={5} ratingNumber="5/5" sx={{ fontSize: '1.15rem' }} />
                     </div>
                 </Grid>
             </div>

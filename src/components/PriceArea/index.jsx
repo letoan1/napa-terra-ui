@@ -70,7 +70,7 @@ const rows = [
     createData('Pricing', '$100.00', '$200.00', '$300.00'),
     createData(
         '',
-        <h5 className="started">
+        <h5 className="started" style={{ cursor: 'pointer' }}>
             Get Started{' '}
             <span className="move-right">
                 {' '}
@@ -101,14 +101,18 @@ export default function PriceArea() {
                         <TableHead>
                             <TableRow sx={{ backgroundColor: '#f8eee1' }}>
                                 <TableCell sx={{ fontSize: '30px', paddingLeft: '35px' }}>Overview</TableCell>
-                                <TableCell align="center" className="column-black" sx={{ fontSize: '30px' }}>
+                                <TableCell
+                                    align="center"
+                                    className="column-black"
+                                    sx={{ fontSize: '30px', width: '293.5px' }}
+                                >
                                     <div className="center-img">
                                         <img src={bell_price} alt="" /> TerraMart
                                     </div>
                                 </TableCell>
                                 <TableCell
                                     align="center"
-                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px' }}
+                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px', width: '293.5px' }}
                                     className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>
@@ -116,7 +120,7 @@ export default function PriceArea() {
                                 </TableCell>
                                 <TableCell
                                     align="center"
-                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px' }}
+                                    sx={{ fontSize: '18px', fontWeight: 400, marginBottom: '4px', width: '293.5px' }}
                                     className="sm-text"
                                 >
                                     <h5>Other Agency #1</h5>

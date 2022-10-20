@@ -59,8 +59,7 @@
         }
 
         & .area__row-text {
-            flex-basis: 50%;
-
+            padding-right: 3rem;
             @include mobile {
                 padding-bottom: 50px;
             }

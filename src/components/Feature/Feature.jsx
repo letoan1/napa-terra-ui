@@ -25,11 +25,11 @@ export default function Feature() {
                 <div className="feature__area-row">
                     <Box sx={{ margin: '0 24px' }}>
                         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={5}>
                                 <div className="area__row-text">
                                     <h2>
-                                        We offer the <span className="typo-underline">benefits</span> that are unique
-                                        only to us
+                                        We offer <span className="typo-underline">benefits</span> that are unique only
+                                        to us
                                     </h2>
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -38,7 +38,7 @@ export default function Feature() {
                                 </div>
                             </Grid>
 
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={7}>
                                 <div className="area__row-layout">
                                     <div className="row-grid">
                                         <FeatureItem
