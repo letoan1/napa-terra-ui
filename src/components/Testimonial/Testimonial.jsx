@@ -46,7 +46,7 @@ const dataTestimonial = [
 
 export default function Testimonial() {
     return (
-        <section className="testimonial">
+        <section className=" testimonial">
             <ul className="shap">
                 <li>
                     <img src={plus} alt="plus" />
@@ -85,8 +85,8 @@ export default function Testimonial() {
                                             fontSize: 24,
                                         }}
                                     >
-                                        {dataTestimonial?.map((data) => (
-                                            <SwiperSlide>
+                                        {dataTestimonial?.map((data, index) => (
+                                            <SwiperSlide key={index}>
                                                 <div className="testimonial__swiper-preview">
                                                     <p>{data?.comment}</p>
                                                     <div className="author">

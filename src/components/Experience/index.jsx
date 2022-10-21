@@ -14,7 +14,7 @@ export default function Experience() {
     return (
         <section className="experience">
             <img src={bell} alt="Bell" className="bell" />
-            <Box sx={{ margin: '0 24px' }}>
+            <Box>
                 <div className="container experience__area">
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         <div className="experience__area-row">

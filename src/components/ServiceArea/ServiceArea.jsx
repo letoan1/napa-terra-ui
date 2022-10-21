@@ -22,7 +22,7 @@ export default function ServiceArea() {
                 <p>You said I'd feel better if I just worked hard without lifting my head up</p>
                 <img src={mic} alt="Mic" className="moving_one" />
                 <img src={cup} alt="Cup" className="moving_two" />
-                <Box sx={{ margin: '0 24px' }}>
+                <Box >
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         <Grid item xs={12} md={6}>
                             <ServiceItem

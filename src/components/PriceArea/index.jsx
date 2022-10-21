@@ -147,7 +147,7 @@ export default function PriceArea() {
                                                     }}
                                                 >
                                                     <StyledTableCell
-                                                        colspan="2"
+                                                        colSpan="2"
                                                         sx={{
                                                             textAlign: 'center',
                                                             fontWeight: 'bold',

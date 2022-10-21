@@ -71,12 +71,12 @@ export default function Navigation() {
                                             {nav.class === 'pages__sub' ? (
                                                 <div className="pages__sub-row">
                                                     {nav.childrenList.map((row) => (
-                                                        <div className={row.name}>
+                                                        <div className={row.name} key={row.name}>
                                                             <>
                                                                 <h4 style={{ color: '#000' }}>{row.title}</h4>
                                                                 <ul>
-                                                                    {row.sub.map((sub) => (
-                                                                        <li>
+                                                                    {row.sub.map((sub, index) => (
+                                                                        <li key={index}>
                                                                             <a href="#">{sub}</a>
                                                                         </li>
                                                                     ))}
@@ -89,13 +89,14 @@ export default function Navigation() {
                                                 <>
                                                     {nav?.class === 'portfolio__sub' ? (
                                                         <ul>
-                                                            {nav.childrenList?.map((child) => (
+                                                            {nav.childrenList?.map((child, index) => (
                                                                 <li
                                                                     className={
                                                                         nav.class === 'portfolio__sub'
                                                                             ? 'portfolio__sub-item'
                                                                             : ''
                                                                     }
+                                                                    key={index}
                                                                 >
                                                                     <a href="#">
                                                                         {<child.icon color={child.color} />}
@@ -108,8 +109,8 @@ export default function Navigation() {
                                                         <>
                                                             {nav?.children && (
                                                                 <ul>
-                                                                    {nav?.children.map((child) => (
-                                                                        <li>
+                                                                    {nav?.children.map((child, index) => (
+                                                                        <li key={index}>
                                                                             <a href="#">{child}</a>
                                                                         </li>
                                                                     ))}
@@ -171,10 +172,10 @@ export default function Navigation() {
                             <BasicButtons nav={nav} variant={'text mobile'} titleButton={'Login'} />
                             <BasicButtons nav={nav} variant={'outline scroll'} titleButton={'Sign up'} />
                         </span>
-                        <div class="icon__close" ref={menuRef} onClick={handleClickMenu}>
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
+                        <div className="icon__close" ref={menuRef} onClick={handleClickMenu}>
+                            <div className="line1"></div>
+                            <div className="line2"></div>
+                            <div className="line3"></div>
                         </div>
                     </div>
                 </div>
