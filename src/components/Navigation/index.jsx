@@ -3,11 +3,11 @@ import React from 'react';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+// import IconButton from '@mui/material/IconButton';
+// import Typography from '@mui/material/Typography';
+// import Menu from '@mui/material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
 
 import BasicButtons from '../Button';
 import './navigation.scss';
@@ -164,18 +164,19 @@ export default function Navigation() {
                                 </MenuItem>
                             ))}
                         </Menu> */}
+                    </div>
 
+                    <div className="button-area" style={{ display: 'flex', alignItems: 'center' }}>
+                        <span className="nav__top-button">
+                            <BasicButtons nav={nav} variant={'text mobile'} titleButton={'Login'} />
+                            <BasicButtons nav={nav} variant={'outline scroll'} titleButton={'Sign up'} />
+                        </span>
                         <div class="icon__close" ref={menuRef} onClick={handleClickMenu}>
                             <div class="line1"></div>
                             <div class="line2"></div>
                             <div class="line3"></div>
                         </div>
                     </div>
-
-                    <span className="nav__top-button">
-                        <BasicButtons nav={nav} variant={'text mobile'} titleButton={'Login'} />
-                        <BasicButtons nav={nav} variant={'outline'} titleButton={'Sign up'} />
-                    </span>
                 </div>
             </Box>
         </AppBar>

@@ -20,6 +20,12 @@
         padding-right: 15px;
     }
 
+    & .nav__top-center {
+        @include mobile {
+            display: none;
+        }
+    }
+
     & .nav__top-center ul {
         position: relative;
         display: flex;
@@ -323,7 +329,6 @@
         & .icon__close {
             position: relative;
             display: block;
-            margin-left: 1100%;
 
             & > div {
                 width: 25px;
@@ -352,7 +357,6 @@
         & .icon__close {
             position: relative;
             display: block;
-            margin-left: 430%;
 
             & > div {
                 width: 25px;
@@ -383,6 +387,12 @@
 
     & .nav__top-button {
         display: flex;
+        & .scroll {
+            &:hover {
+                background-color: $black-color;
+                color: $white-color;
+            }
+        }
         @include mobile {
             display: block;
         }

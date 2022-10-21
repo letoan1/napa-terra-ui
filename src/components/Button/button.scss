@@ -4,6 +4,10 @@
 .button-type {
     margin-right: 25px;
 
+    @include mobile {
+        margin-right: 5px;
+    }
+
     & .text {
         color: $white-color;
         width: 100%;

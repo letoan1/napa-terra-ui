@@ -1,4 +1,5 @@
 @import './variables';
+
 @mixin mobile {
     @media only screen and (max-width: $mobile-width) {
         @content;
@@ -6,7 +7,7 @@
 }
 
 @mixin tablet {
-    @media only screen and (max-width: $tablet-width) {
+    @media only screen and (min-width: 740px) and (max-width: $tablet-width) {
         @content;
     }
 }

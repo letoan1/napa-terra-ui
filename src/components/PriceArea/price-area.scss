@@ -67,6 +67,12 @@
         display: flex;
         padding-top: 100px;
 
+        & .font-table {
+            font-size: 16px;
+            min-width: 160px;
+            font-weight: 400;
+        }
+
         & .border-table {
             border-bottom: 1px solid #3f3f3f;
 
