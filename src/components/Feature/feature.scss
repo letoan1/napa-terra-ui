@@ -9,6 +9,11 @@
     padding: 140px 0px 100px;
     border-radius: $border-radius;
 
+    @include desktop {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
     @include tablet {
         padding: 80px 0px 50px;
     }

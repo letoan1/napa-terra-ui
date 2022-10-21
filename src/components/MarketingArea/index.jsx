@@ -8,13 +8,23 @@ import BasicButtons from '~/components/Button';
 import dashboard from '~/assets/img/dashbord_img.png';
 import card from '~/assets/img/card.png';
 import card2 from '~/assets/img/card-2.png';
+import start from '~/assets/img/start.png';
+import flower from '~/assets/img/flower-top.png';
 
 export default function MarketingArea() {
     return (
         <section className="marketing">
+            <ul className="parallax-img">
+                <li>
+                    <img src={start} alt="" />
+                </li>
+                <li>
+                    <img src={flower} alt="" />
+                </li>
+            </ul>
             <div className="container marketing__area">
                 <h2>
-                    Transform the way you think about <span className="typo">marketing</span>
+                    Transform the way you <br /> think about <span className="typo">marketing</span>
                 </h2>
                 <p>You said I'd feel better if I just worked hard without lifting my head up</p>
 
